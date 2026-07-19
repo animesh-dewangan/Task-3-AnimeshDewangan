@@ -1,0 +1,79 @@
+body {
+    background-color: hsla(0, 0%, 14%, 0.708);
+    font-family:Arial,sans-serif;
+    color:hsl(0, 5%, 88%);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+    margin:0;
+}
+.Calculator{
+    background-color: hsla(0, 0%, 28%, 0.708);
+    padding : 20px;
+
+    /* width:100%;
+    max-width: 500px; */
+    width:500px;
+
+    border: none;
+    border-radius: 20px;
+
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+}
+#display {
+    width:100%;
+    height: 70px;
+
+    border:none;
+    outline:none;
+    border-radius: 10px;
+
+    background-color: hsla(0, 0%, 28%, 0.708);
+    color: hsl(0, 3%, 88%);
+
+    font-size: 1.5rem;
+    text-align: right;
+
+    padding:10px;
+    margin-bottom:20px;
+
+    box-sizing: border-box;
+}
+.Buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+.btn{
+    color: white;
+    background-color: hsla(0, 1%, 26%, 0.868);
+    
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    height: 50px;
+
+    border:none;
+    border-radius: 10px;
+
+    transition: 0.3s;
+    cursor:pointer;
+}
+.btn:hover {
+    background-color: hsla(0, 1%, 36%, 0.868);
+    transform: scale(1.04);
+}
+.Operator{
+    background-color: hsl(36, 92%, 67%);
+}
+.Operator:hover{
+    background-color: hsl(36, 100%, 67%);
+    transform: scale(1.05);
+}
+.Zero{
+    grid-column: span 2;
+}
